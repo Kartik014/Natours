@@ -6,6 +6,10 @@ const tourSchema = new mongoose.Schema({
         required: [true, "A tour must have the name"],
         unique: true
     },
+    id:{
+        type: Number,
+        required: [true,"A tour must have id"],
+    },
     duration: {
         type: Number,
         required: [true, "The duration of a tours is mandatory!"]
